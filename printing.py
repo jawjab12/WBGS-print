@@ -10,7 +10,7 @@ def run_printer_upload():
     PASSWORD = ""
 
     print("=========================================")
-    print("      PRINTER FTP UPLOAD LAUNCHER        ")
+    print("      Dont be stupid pls        ")
     print("=========================================\n")
 
     print("Step 1: Provide the file you want to print.")
