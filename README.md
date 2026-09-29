@@ -6,14 +6,14 @@ Allows you to print anything to the Library Printer, free of charge and in full 
 
 ---
 
-## 🛑 1. Setup Python (Required)
+##  1. Setup Python (Required)
 Your computer needs Python to run this automation script.
 * **Download:** Get the installer from [python.org](https://python.org).
 * **Crucial Windows Step:** You **MUST** check the box that says **"Add python.exe to PATH"** at the bottom of the installer before clicking install, or the script will break.
 
 ---
 
-## 📥 2. Download the Script
+## 2. Download the Script
 1. Look at the right side of this GitHub page and click the latest **Release** (`WBGS Library Print V1.0`).
 2. Under **Assets**, click **`LibPrint.py`** to download it.
 3. Move the file to your **Desktop**.
@@ -22,7 +22,7 @@ Your computer needs Python to run this automation script.
 
 ---
 
-## 🚀 3. How to Run It
+##  3. How to Run It
 
 ### Windows
 1. Double-click `LibPrint.py`.
