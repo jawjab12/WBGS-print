@@ -34,12 +34,12 @@ Follow these quick steps to get the printing tool onto your computer:
 ### Windows
 1. Double-click the script file (`printer_upload.py`).
 2. A black terminal window will open. 
-3. **Drag and drop** the file you want to print straight into that window and press **Enter**.
+3. **Drag and drop** the file you want to print straight into that window and press **Enter**. OR copy the file path for example (user/download/image.png)
 4. Press **Enter** one more time to confirm. Your file is now in the library queue!
 
 ### macOS (Mac) & Linux
 1. Open your **Terminal** app (press `Cmd + Space`, type *Terminal*, and press Enter).
-2. Drag and drop the `printer_upload.py` file into the terminal window and press **Enter** to start it.
+2. Drag and drop the `printer_upload.py` file into the terminal window and press **Enter** to start it. (or copy the file path)
 3. **Drag and drop** the file you want to print into the window when prompted, and press **Enter**.
 4. Press **Enter** again to complete the print request.
 
