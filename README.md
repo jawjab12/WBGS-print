@@ -38,7 +38,7 @@ Your computer needs Python to run this automation script.
 
 ---
 
-## 💡 Troubleshooting
+##  Troubleshooting
 * **File Not Found:** Check for accidental spaces or symbols in your file path.
 * **Connection Timed Out:** Make sure you are logged into the school Wi-Fi. The library printer might also be offline.
 * **Opens as text instead of running:** Python is missing or wasn't added to your PATH. Re-run the Python installer and remember to check the **"Add to PATH"** box!
