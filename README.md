@@ -2,7 +2,7 @@
 
 Allows you to print anything to the Library Printer, Free of charge and in full colour.
 
-
+**Disclaimer:** This script was created purely as a personal proof-of-concept and was never formallu utilised. It is provided "as-is" for educational demonstration purposes. Use at your own discretion.
 ---
 
 ## 🛑 Important Requirement: Install Python First
