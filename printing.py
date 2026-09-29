@@ -2,7 +2,7 @@
 import os
 import subprocess
 import sys
-from pathlib import Path  # Cross-platform path handling
+from pathlib import Path  
 
 def run_printer_upload():
     HOST = "172.24.77.24"
@@ -16,10 +16,10 @@ def run_printer_upload():
     print("Step 1: Provide the file you want to print.")
     raw_input = input("   Drag & drop the file here or type the path: ").strip()
     
-    # Securely strip quotes that come from drag-and-drop actions
+    #  strip quotes that come from drag-and-drop actions
     clean_path = raw_input.strip("'\"")
     
-    # Path conversion ensures Windows backslashes are resolved properly
+
     local_file_path = Path(clean_path).resolve()
     
     if not local_file_path.exists() or not local_file_path.is_file():
@@ -45,7 +45,7 @@ def run_printer_upload():
 
     ftp_url = f"ftp://{HOST}/lp/{remote_filename}"
     
-    # local_file_path is converted to a string format native to the host OS
+   
     curl_command = [
         "curl",
         "--user", f"{USER}:{PASSWORD}",
