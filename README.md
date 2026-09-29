@@ -1,8 +1,7 @@
 # WBGS-print
 
-Allows you to print anything to the Library Printer,
+Allows you to print anything to the Library Printer,free of charge and in full colour.
 
- free of charge and in full colour.
 Feel free to make a pull request if you know what your doing 
 
 > **Disclaimer:** This script is a personal proof-of-concept/network testing tool provided "as-is" for educational demonstration purposes. Use at your own discretion.
