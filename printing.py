@@ -2,6 +2,7 @@
 import os
 import subprocess
 import sys
+from pathlib import Path  # Cross-platform path handling
 
 def run_printer_upload():
     HOST = "172.24.77.24"
@@ -13,18 +14,22 @@ def run_printer_upload():
     print("=========================================\n")
 
     print("Step 1: Provide the file you want to print.")
-    local_file_path = input("   Drag & drop the file here or type the path: ").strip()
+    raw_input = input("   Drag & drop the file here or type the path: ").strip()
     
-    local_file_path = local_file_path.strip("'\"")
+    # Securely strip quotes that come from drag-and-drop actions
+    clean_path = raw_input.strip("'\"")
     
-    if not os.path.exists(local_file_path):
-        print(f"\nError: File '{local_file_path}' not found.")
+    # Path conversion ensures Windows backslashes are resolved properly
+    local_file_path = Path(clean_path).resolve()
+    
+    if not local_file_path.exists() or not local_file_path.is_file():
+        print(f"\nError: File '{clean_path}' not found.")
         print("Please check the path and try again.")
         print("\n" + "="*41)
         input("Press Enter to close this window...")
         return
         
-    remote_filename = os.path.basename(local_file_path)
+    remote_filename = local_file_path.name
 
     print("\nStep 2: Select transfer format.")
     print("   [1] Binary mode (For PDFs, Images, PostScript, PCL, Documents) - RECOMMENDED")
@@ -40,10 +45,11 @@ def run_printer_upload():
 
     ftp_url = f"ftp://{HOST}/lp/{remote_filename}"
     
+    # local_file_path is converted to a string format native to the host OS
     curl_command = [
         "curl",
         "--user", f"{USER}:{PASSWORD}",
-        "-T", local_file_path,
+        "-T", str(local_file_path),
         ftp_url
     ] + extra_args
 
@@ -65,4 +71,3 @@ def run_printer_upload():
 
 if __name__ == "__main__":
     run_printer_upload()
-
