@@ -1,6 +1,9 @@
 # WBGS print
 # Lets you print files to the library printer in full colour, for free!
+<!-- NERD STUFF:
+The way this works is the printer accepts anonymous printer connections over wifi, thats all it is lol
 
+-->
 
 > [!NOTE]
 > You must be connected to the **WGSB Wi-Fi** for the script to reach the printer.
